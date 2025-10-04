@@ -8,18 +8,18 @@
 			icon: Phone,
 			title: 'Telefon',
 			details: ['Zadzwoń do nas', 'Codziennie 8:00 - 20:00'],
-			action: 'tel:+48123456789'
+			action: 'tel:+48797187786'
 		},
 		{
 			icon: Mail,
 			title: 'Email',
-			details: ['kontakt@lesnyzakatek.pl', 'Odpowiadamy w 24h'],
-			action: 'mailto:kontakt@lesnyzakatek.pl'
+			details: ['lesnyzakatek.nowogard@gmail.com', 'Odpowiadamy w 24h'],
+			action: 'mailto:lesnyzakatek.nowogard@gmail.com'
 		},
 		{
 			icon: MapPin,
 			title: 'Adres',
-			details: ['Nowogard', 'województwo zachodniopomorskie'],
+			details: ['Olchowo 101 72-200 Nowogard', 'województwo zachodniopomorskie'],
 			action: '#location'
 		},
 		{
@@ -78,7 +78,7 @@
 				<div class="flex flex-col justify-center gap-4 sm:flex-row">
 					<Button size="lg" clazz="px-8 text-lg">
 						<Phone class="mr-2 h-5 w-5" />
-						Zadzwoń teraz
+						<a href="tel:+48797187786">Zadzwoń teraz</a>
 					</Button>
 					<Button size="lg" variant="outline" clazz="px-8 text-lg">
 						<Mail class="mr-2 h-5 w-5" />

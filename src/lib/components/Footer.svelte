@@ -16,10 +16,10 @@
 			<div>
 				<h4 class="mb-4 text-lg font-semibold">Kontakt</h4>
 				<div class="space-y-2 text-primary-foreground/80">
-					<p>Nowogard</p>
+					<p>Olchowo 101 72-200 Nowogard</p>
 					<p>woj. zachodniopomorskie</p>
-					<p>Tel: +48 123 456 789</p>
-					<p>Email: kontakt@lesnyzakatek.pl</p>
+					<p>Tel: +48 797 187 786</p>
+					<p>Email: lesnyzakatek.nowogard@gmail.com</p>
 				</div>
 			</div>
 

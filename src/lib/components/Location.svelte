@@ -59,13 +59,20 @@
 
 		<div class="mx-auto mt-16 max-w-4xl">
 			<div class="aspect-video overflow-hidden rounded-xl bg-muted shadow-lg">
-				<div
-					class="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10"
-				>
-					<div class="p-8 text-center">
-						<MapPin class="mx-auto mb-4 h-16 w-16 text-primary" />
-						<p class="text-lg text-muted-foreground">Mapa lokalizacji</p>
-					</div>
+				<div style="width: 100%">
+					<iframe
+						title="map"
+						width="100%"
+						height="600"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=53.659361,15.097667+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+						><a href="https://www.mapsdirections.info/it/calcola-la-popolazione-su-una-mappa/"
+							>nav</a
+						>
+					</iframe>
 				</div>
 			</div>
 		</div>
