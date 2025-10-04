@@ -70,11 +70,12 @@
 		>
 			<ul class="flex flex-col space-y-4">
 				{#each navLinks as { label, href }}
-					<li
+					<a
+						{href}
 						class="block rounded-lg px-4 py-3 text-foreground transition-colors hover:bg-secondary"
 					>
-						<a {href}>{label}</a>
-					</li>
+						{label}
+					</a>
 				{/each}
 
 				<div class="px-4 pt-2">
