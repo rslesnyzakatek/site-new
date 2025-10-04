@@ -52,14 +52,16 @@
 			<button on:click={toggleMenu} aria-label="Otwórz menu" class="md:hidden">
 				<MenuIcon class="h-6 w-6 cursor-pointer text-primary md:hidden" />
 			</button>
-			<ul class="hidden items-center space-x-8 md:flex">
-				{#each navLinks as { label, href }}
-					<li class="text-foreground transition-colors duration-200 hover:text-primary">
-						<a {href}>{label}</a>
-					</li>
-				{/each}
-				<Button clazz="ml-4" size="lg" on:click={scrollToContact}>Kontakt</Button>
-			</ul>
+			<div class="hidden items-center md:flex">
+				<ul class="hidden items-center space-x-8 md:flex">
+					{#each navLinks as { label, href }}
+						<li class="text-foreground transition-colors duration-200 hover:text-primary">
+							<a {href}>{label}</a>
+						</li>
+					{/each}
+					<li><Button clazz="ml-4 hidden" size="lg" on:click={scrollToContact}>Kontakt</Button></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	{#if navbarVisible}
@@ -70,18 +72,19 @@
 		>
 			<ul class="flex flex-col space-y-4">
 				{#each navLinks as { label, href }}
-					<a
-						{href}
-						class="block rounded-lg px-4 py-3 text-foreground transition-colors hover:bg-secondary"
-					>
-						{label}
-					</a>
+					<li>
+						<a
+							{href}
+							class="block rounded-lg px-4 py-3 text-foreground transition-colors hover:bg-secondary"
+						>
+							{label}
+						</a>
+					</li>
 				{/each}
-
-				<div class="px-4 pt-2">
-					<Button clazz="w-full" size="lg" on:click={scrollToContact}>Kontakt</Button>
-				</div>
 			</ul>
+			<div class="px-4 pt-2">
+				<Button clazz="w-full" size="lg" on:click={scrollToContact}>Kontakt</Button>
+			</div>
 		</div>
 	{/if}
 </nav>
